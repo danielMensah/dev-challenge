@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-## Setup:
+## Setups:
 * Clone project `git clone git@github.com:danielMensah/React-OvoBoilerplate.git`.
 * Install dependencies `npm install`.
 * Start application `npm start`.
