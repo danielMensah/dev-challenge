@@ -17,4 +17,12 @@
 
 .singlePhoto {
     margin: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.title {
+    margin-top: -30px;
+    background-color: beige;
 }

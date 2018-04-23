@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import styles from './album-component.css';
-import { DropdownButton, MenuItem } from 'react-bootstrap';
+import { DropdownButton, MenuItem, Image } from 'react-bootstrap';
 import { setAlbumPhotos } from '../actions/user-actions';
 import { bindActionCreators } from 'redux';
 
@@ -29,8 +29,12 @@ class AlbumComponent extends Component {
           {albums.map((album) => <MenuItem key={album.id} eventKey={album.id}>{this.capitalize(album.title)}</MenuItem>)}
         </DropdownButton>
         <div className={styles.photos}>
-          { albumPhotos.map((photo) => <img className={styles.singlePhoto} alt={photo.title}
-                                            key={photo.id} src={photo.thumbnailUrl}/>)}
+          { albumPhotos.map((photo) => {
+            return <div key={photo.id} className={styles.singlePhoto}>
+              <Image src={photo.thumbnailUrl}/>
+              <span className={styles.title}>{photo.title}</span>
+            </div>
+          })}
         </div>
       </div>
     )
