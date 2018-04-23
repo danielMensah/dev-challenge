@@ -1,0 +1,20 @@
+.container {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 55%;
+    align-items: center;
+}
+
+.dropDown {
+    width: 300px !important;
+}
+
+.photos {
+    display: inline;
+}
+
+.singlePhoto {
+    margin: 10px;
+}
