@@ -5,7 +5,7 @@ import styles from './app.css';
 import UsersComponent from '../../components/users-component';
 import AlbumComponent from '../../components/album-component';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { getUsers, getAlbums, getPhotos } from '../../actions/user-actions';
+import { getUsers, getAlbums, getPhotos } from '../../actions/index';
 
 class App extends Component {
 

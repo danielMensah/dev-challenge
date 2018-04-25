@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 import { RaisedButton } from 'material-ui';
-import { setUserAlbum, reset } from '../actions/user-actions';
+import { setUserAlbum, reset } from '../actions';
 
 class User extends Component {
 

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import styles from './album-component.css';
 import { DropdownButton, MenuItem, Image } from 'react-bootstrap';
-import { setAlbumPhotos } from '../actions/user-actions';
+import { setAlbumPhotos } from '../actions';
 import { bindActionCreators } from 'redux';
 
 class AlbumComponent extends Component {
